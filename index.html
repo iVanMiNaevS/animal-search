@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./style.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<header>
+			<img src="./Media/images/jpg - png/Dog n Cat.jpg" alt="logo" class="header__logo" />
+			<nav>
+				<ul class="nav__list">
+					<li class="nav-list__item"><a href="#">Поиск</a></li>
+					<li class="nav-list__item"><a href="#">Регистрация</a></li>
+					<li class="nav-list__item"><a href="#">Личный кабинет</a></li>
+					<li class="nav-list__item"><a href="#">Добавить</a></li>
+					<li class="nav-list__item"><a href="#">Отзывы</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<div class="container">
+				<section class="slider-wrapper">
+					<div class="slider">
+						<div class="slide not-active">
+							<img
+								src="./Media/images/jpg - png/sad_cat_on_bench.jpg"
+								alt="animals"
+								class="slide-img"
+							/>
+						</div>
+						<div class="slide active">
+							<img
+								src="./Media/images/jpg - png/one happy dog on lawn.jpg"
+								alt="animals"
+								class="slide-img"
+							/>
+							<div class="slide-content">
+								<div class="slide-content__text">
+									<h2>Собака</h2>
+									<p>Гулял с девушкой по ЦПКиО и обнаружили эту малышку около бордюра</p>
+								</div>
+								<button class="button bt-light"><a href="#">Подробнее</a></button>
+							</div>
+						</div>
+						<div class="slide not-active">
+							<img
+								src="./Media/images/jpg - png/abandoned_ferret.jpg"
+								alt="animals"
+								class="slide-img"
+							/>
+						</div>
+					</div>
+					<div class="slider-nav">
+						<div class="slider-nav__row"><</div>
+						<div class="slider-nav__bar">
+							<div class="slider-nav__bar-dot"></div>
+							<div class="slider-nav__bar-dot active"></div>
+							<div class="slider-nav__bar-dot"></div>
+						</div>
+						<div class="slider-nav__row">></div>
+					</div>
+				</section>
+			</div>
+			<section class="search-section">
+				<h2>БЫСТРЫЙ ПОИСК</h2>
+				<div class="search-wrapper">
+					<div class="search__input-wrapper">
+						<input type="text" class="search__input" />
+					</div>
+					<div class="search__prompts">
+						<button class="button bt-dark">собака</button>
+						<button class="button bt-dark">кот</button>
+						<button class="button bt-dark">хомяк</button>
+						<button class="button bt-dark">попугай</button>
+						<button class="button bt-dark">хз</button>
+					</div>
+					<button class="button bt-dark bt-search">найти</button>
+				</div>
+			</section>
+			<section class="about-section">
+				<div class="container">
+					<h2>О компании</h2>
+					<div class="about__wrapper">
+						<div class="about__item one">
+							<div class="about__text">Помогли найти более 500 животных.</div>
+						</div>
+						<div class="about__item two">
+							<div class="about__text">
+								Более трех лет способствуем возвращению питомцев к хозяевам.
+							</div>
+						</div>
+						<div class="about__item three">
+							<div class="about__text">Все услуги оказываются бесплатно.</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="find-animals">
+				<div class="container">
+					<div class="animals__card">
+						<img src="" alt="" class="animals__card-img" />
+						<div class="animals-card__content">
+							<p><span>Район:</span>Октябрьский</p>
+							<p><span>Контактный номер:</span>8(800)525-75-75</p>
+							<p><span>Дата, когда было найдено животное:</span>03.10.23</p>
+							<p><span>Клеймо:</span>нет</p>
+							<p><span>Имя нашедшего:</span>Аркадий</p>
+						</div>
+					</div>
+					<div class="animals__card"></div>
+					<div class="animals__card"></div>
+					<div class="animals__card"></div>
+					<div class="animals__card"></div>
+					<div class="animals__card"></div>
+				</div>
+			</section>
+		</main>
+		<footer></footer>
+	</body>
+</html>
