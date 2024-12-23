@@ -80,6 +80,7 @@ header {
 	justify-content: center;
 }
 .slide.active {
+	aspect-ratio: 1/1;
 	flex: 0 1 70%;
 	display: flex;
 	background: var(--lime-light);
@@ -284,16 +285,22 @@ header {
 .about__wrapper {
 	width: 100%;
 	display: flex;
-	flex-wrap: wrap;
 	justify-content: center;
+	flex-direction: column;
+	gap: 50px;
+}
+.about__wrapper-row1 {
+	display: flex;
+	justify-content: space-between;
 	gap: 50px;
 }
 .about__item {
 	background-size: cover;
 	background-position: center;
 	border-radius: 20px;
-	flex: 1 1 300px;
-	height: 300px;
+	aspect-ratio: 1/1;
+	max-height: 500px;
+	flex: 1 1 30%;
 	display: flex;
 }
 .about__item:hover .about__text {
@@ -309,6 +316,8 @@ header {
 	background-image: url(./Media/images/jpg\ -\ png/puppy.jpg);
 }
 .about__item.three {
+	width: 100%;
+	aspect-ratio: 12/3;
 	background-image: url(./Media/images/jpg\ -\ png/We_find_the_puppy.jpg);
 }
 .about__text {
@@ -319,6 +328,83 @@ header {
 	font-size: 25px;
 	padding: 20px;
 	width: 100%;
+	border-radius: 20px;
 	align-self: flex-end;
 	background: #9cccc07d;
+}
+.find-animals {
+	background: #9cccc050;
+}
+.find-animals__wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 80px;
+}
+.animals__card {
+	box-shadow: 0px 0px 10px 10px #9cccc069;
+	border-radius: 20px;
+	flex: 1 1 400px;
+	display: flex;
+	flex-direction: column;
+	background: var(--white);
+	transition: 0.5s;
+	cursor: pointer;
+}
+.animals__card:hover {
+	box-shadow: 0px 0px 20px 20px #9cccc048;
+	transform: scale(1.05);
+}
+.animals__card-img {
+	position: relative;
+	z-index: 0;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 180px;
+	width: 100%;
+	height: 400px;
+	object-fit: cover;
+}
+.animals-card__content {
+	position: relative;
+	z-index: 10;
+	margin-top: -40px;
+	padding: 20px;
+	display: flex;
+	background: var(--white);
+	gap: 10px;
+	flex-direction: column;
+	color: var(--lime-light);
+	border-top-left-radius: 40px;
+}
+.animals-card__content p span {
+	font-size: 20px;
+	margin-right: 10px;
+	color: #5e9185;
+}
+.search-form-section {
+	display: flex;
+	justify-content: center;
+}
+.form-wrapper {
+	width: 70%;
+	display: flex;
+}
+.search-form__form {
+	padding: 30px;
+	width: 55%;
+	background: var(--lime-light);
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+.search-form__form h2 {
+	text-align: center;
+	color: var(--white);
+}
+.search-form__img {
+	width: 45%;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+.input-wrapper {
 }
