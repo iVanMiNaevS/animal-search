@@ -12,8 +12,8 @@
 			<nav>
 				<ul class="nav__list">
 					<li class="nav-list__item"><a href="#">Поиск</a></li>
-					<li class="nav-list__item"><a href="#">Регистрация</a></li>
-					<li class="nav-list__item"><a href="#">Личный кабинет</a></li>
+					<li class="nav-list__item"><a href="./register.html">Регистрация</a></li>
+					<li class="nav-list__item"><a href="./profile.html">Личный кабинет</a></li>
 					<li class="nav-list__item"><a href="#">Добавить</a></li>
 					<li class="nav-list__item"><a href="#">Отзывы</a></li>
 				</ul>
@@ -103,6 +103,7 @@
 			</section>
 			<section class="find-animals">
 				<div class="container">
+					<h2>Найдите здесь своего питомца</h2>
 					<div class="find-animals__wrapper">
 						<div class="animals__card">
 							<img
@@ -197,20 +198,107 @@
 						<img class="search-form__img" src="./Media/images/jpg - png/kitten_icon.jpg" />
 						<form class="search-form__form">
 							<h2>Найти пушиститка</h2>
-							<div class="input-wrapper">
-								<input type="text" />
+							<div class="search-form__inputs-wrapp">
+								<div class="input-wrapper">
+									<input type="text" placeholder="Район" />
+								</div>
+								<div class="input-wrapper">
+									<input type="text" placeholder="Вид животного" />
+								</div>
 							</div>
-							<div class="input-wrapper">
-								<input type="text" />
+							<button class="search-form__bt button bt-light">Искать</button>
+						</form>
+					</div>
+				</section>
+			</div>
+			<section class="reviews-section">
+				<div class="container">
+					<div class="reviews__wrapper">
+						<h2>Отзывы счастливчиков</h2>
+						<div class="reviews__list">
+							<div class="reviews__item">
+								<img class="review__img" src="./Media/images/jpg - png/cat_in_winter.jpg" />
+								<div class="review__content">
+									<div class="review__author">
+										<img
+											src="./Media/images/jpg - png/Pet_Friendly_Sticker_black.jpg"
+											alt="author"
+											class="review__author-foto"
+										/>
+										<div class="review__author-name">Алексей</div>
+									</div>
+									<div class="review__review">
+										Нашёл своего Пса через ваше приложение буквально через 3 дня. Спасибо вам
+										огромное.
+									</div>
+									<div class="review__date">17.06.2023</div>
+								</div>
 							</div>
-							<div class="input-wrapper">
-								<input type="text" />
+							<div class="reviews__item not-active">
+								<img class="review__img" src="./Media/images/jpg - png/one happy dog on lawn.jpg" />
+								<div class="review__content">
+									<div class="review__author">
+										<img
+											src="./Media/images/jpg - png/Pet_Friendly_Sticker_black.jpg"
+											alt="author"
+											class="review__author-foto"
+										/>
+										<div class="review__author-name">Ольга</div>
+									</div>
+									<div class="review__review">
+										С помощью вашего приложения нашла своего Чаки на следующий день, как он
+										потерялся. Безмерно вам благодарна.
+									</div>
+									<div class="review__date">17.06.2023</div>
+								</div>
 							</div>
+						</div>
+						<div class="reviews__dots">
+							<div class="reviews__dot active"></div>
+							<div class="reviews__dot"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="container">
+				<section class="subscribe-section">
+					<div class="sub__img-wrapper">
+						<img
+							src="./Media/images/jpg - png/We_find_the_puppy.jpg"
+							alt="image"
+							class="sub__img"
+						/>
+					</div>
+					<div class="form__wrapper">
+						<form class="sub__form">
+							<h2>Получайте новости на почту</h2>
+							<input type="text" class="sub__input" placeholder="email" />
+							<div class="sub__assent-wrapp">
+								<input type="checkbox" name="asset" />
+								<label for="asset">согласие на обработку персональных данных </label>
+							</div>
+							<button class="sub__button button bt-light">Получать</button>
 						</form>
 					</div>
 				</section>
 			</div>
 		</main>
-		<footer></footer>
+		<footer>
+			<div class="footer-container">
+				<div class="footer__data-comp">
+					<h2>Данные компании</h2>
+					<p>8 (800)123-45-67</p>
+					<p>mail@newlife.ru</p>
+				</div>
+				<nav class="footer__navigation">
+					<p><a href="#">Главная</a></p>
+					<p><a href="./register.html">Регистрация</a></p>
+					<p><a href="./login.html">Авторизация</a></p>
+					<p><a href="./profile.html">Личный кабинет</a></p>
+					<p><a href="#">Найдено животное</a></p>
+					<p><a href="#">Поиск</a></p>
+				</nav>
+			</div>
+		</footer>
 	</body>
 </html>
