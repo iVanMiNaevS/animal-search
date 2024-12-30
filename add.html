@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<main>
+			<div class="container">
+				<form class="add-form">
+					<h2>Добавить объявление</h2>
+					<div class="add-form__row">
+						<div class="form-add__input-wrapp">
+							<input class="form-add__input" type="tel" placeholder="Номер телефона" />
+						</div>
+						<div class="form-add__input-wrapp">
+							<input class="form-add__input" type="email" placeholder="email" />
+							<p class="form__error">email обязательно</p>
+						</div>
+					</div>
+					<div class="form-add__input-wrapp form-add__with-lab">
+						<input class="form-add__check form-add__check-reg" name="reg" type="checkbox" />
+						<label for="reg">Зарегестрироваться сразу</label>
+						<input class="form-add__input" type="password" placeholder="Пароль" />
+						<div class="form-add__input-wrapp"></div>
+						<input class="form-add__input" type="password" placeholder="Подтверждение пароля" />
+						<div class="form-add__input-wrapp"></div>
+					</div>
+					<div class="form-add__input-wrapp">
+						<input class="form-add__input" placeholder="Вид животного" />
+					</div>
+					<div class="form-add__input-wrapp">
+						<label for="">Фото животного</label>
+						<input class="form-add__input" type="file" />
+					</div>
+					<div class="form-add__input-wrapp">
+						<label for="">Дополнительная информация</label>
+						<textarea class="form-add__input" placeholder="Дополнительная информация">
+Пусто</textarea
+						>
+					</div>
+					<div class="add-form__row">
+						<div class="form-add__input-wrapp">
+							<input class="form-add__input" placeholder="Клеймо(если есть)" />
+						</div>
+						<div class="form-add__input-wrapp">
+							<input class="form-add__input" placeholder="Район" />
+						</div>
+					</div>
+					<div class="form-add__input-wrapp">
+						<input
+							class="form-add__input"
+							type="date"
+							placeholder="Дата, когда было найдено животное"
+						/>
+					</div>
+					<div class="form-add__input-wrapp">
+						<input class="form-add__check" type="checkbox" />
+						<label for="">Подтверждение на обработку персональных данных</label>
+					</div>
+					<button class="button bt-normal">Добавить</button>
+				</form>
+			</div>
+		</main>
+	</body>
+</html>
